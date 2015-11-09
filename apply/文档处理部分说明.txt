@@ -12,7 +12,9 @@
 				二者区别 remove 元素的事件被删除
 						 detach 元素的事件保留
 		子元素  empty
-	改：replaceWith(修改自身)，replaceAll（修改自身）
+	改：replaceWith(修改自身)，replaceAll（修改自身）、
+			两者参数，调用者相反
+			区别等同于append与appendTo
 
 	查： 选择器的工作！！
 
