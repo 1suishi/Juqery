@@ -9,15 +9,23 @@
 		
 
 		$(function(){
-			$("p").wrapInner($("<b></b>"));
-			$("p").wrapInner(function(index,html){
+			//$("p").wrapInner($("<b></b>"));
+			 $("p").wrapInner(function(index,html){
 				
-				return $("<b></b>");
+			 	return $("b");
 
-			});
+			 });
 
 		});
 
+		// var s = $("b");
+		// console.log(s);
+
+		// var c = $("<b>");
+		// console.log(c);
+
+		// var a = $("<b></b>");
+		// console.log(a);
 
 
 
