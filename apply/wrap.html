@@ -9,14 +9,21 @@
 
 			// 1,把所有的段落用一个新创建的div包裹起来
 			$(function(){
-				$("p").wrap("<div class='wrap'></div>");
+				//$("p").wrap("<div class='wrap'></div>");
 			});
 
 			//2,用原先div的内容作为新div的class，并将每一个元素包裹起来
 			$(function(){
-				$('.inner').wrap(function() {
-				  return '<div class="' + $(this).text() + '" />';
-				});
+				//$('.inner').wrap(function() {
+				//  return '<div class="' + $(this).text() + '" />';
+				//});
+			});
+
+			//3,使用原有的元素包裹
+			//结果可见 不仅包含了所选元素，子元素也被加入到了包裹中
+
+			$(function(){
+				$("p").wrap($(".wrap"));
 			});
 
 			
@@ -35,7 +42,8 @@
 
 		<p>I would like to say: </p>
 		<p>I would like to say: </p>
-		<div> <p>I would like to say: </p></div>
+		<div class = "wrap"> <p>Hello</p></div>
+
 
 		<div class="container">
 		  <div class="inner">Hello</div>
