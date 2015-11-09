@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			//把所有匹配的元素用其他元素的结构化标记包裹起来。
+
+			// 1,把所有的段落用一个新创建的div包裹起来
+			$(function(){
+				$("p").wrap("<div class='wrap'></div>");
+			});
+
+			//2,用原先div的内容作为新div的class，并将每一个元素包裹起来
+			$(function(){
+				$('.inner').wrap(function() {
+				  return '<div class="' + $(this).text() + '" />';
+				});
+			});
+
+			
+
+
+
+			
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>I would like to say: </p>
+		<p>I would like to say: </p>
+		<div> <p>I would like to say: </p></div>
+
+		<div class="container">
+		  <div class="inner">Hello</div>
+		  <div class="inner">Goodbye</div>
+		</div>
+		
+
+	</body>
+
+</html>
