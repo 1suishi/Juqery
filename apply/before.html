@@ -1,0 +1,38 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			//在每个匹配的元素之前插入内容
+
+			//插入类型
+			// 1， html 标记代码  "<b>Hello</b>"
+			// 2,  DOM元素$("#foo")[0]
+			// 3,  jQuery对象 $("b")
+
+			$(function(){
+				$("p").before("<b>Hello</b>");  //<b>Hello</b><p>I would like to say: </p>
+			});
+
+			
+
+
+
+			
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>I would like to say: </p>
+		
+
+	</body>
+
+</html>
