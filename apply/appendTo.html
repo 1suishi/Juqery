@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+			//把所有匹配的元素追加到另一个指定的元素元素集合中。
+
+			// 被选中的元素 会消失
+			// $(function(){
+			// 	$("p").appendTo("div");
+			// })
+
+
+
+			//返回值是所有被追加的内容，而不仅仅是先前所选中的元素。
+
+			// $(function(){
+			// 	var s = $("p").appendTo("div");
+			// 	console.log(s);   //所有的p标签 6个
+			// })
+
+ 			$(function(){
+				$("p")
+			   .appendTo("div")
+			   .addClass("test");   //添加class
+			})
+
+ 
+
+			
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>I would like to say:1 </p>
+		<p>I would like to say:2 </p>
+		<p>I would like to say:3 </p>
+		<div>234</div>
+		<div>1456</div>
+		<div>456</div>
+
+	</body>
+
+</html>
