@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			//向 每个 匹配的元素内部追加内容。
+
+			// 1,字符串 ： 要添加的内容
+
+			$(function(){
+				$("p").prepend("<b>Hello</b>");
+				$("p").prepend($("span"));   // span 会消失
+			});
+
+
+			//2, 函数 function(index,html)  (html 是原来的内容)；
+
+			// $(function(){
+			// 	$("p,div").append(function(i,html){
+			// 			return html;
+			// 	});
+			// });
+
+			
+
+
+
+			
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>I would like to say: </p>
+
+		<span> inner </span>
+
+	</body>
+
+</html>
