@@ -24,3 +24,8 @@ after,before  插入到选中元素外部
 insertAfter,insertBefore 也是插入到选中元素外部
 				他们和after，before是相反的操作
 				区别和append与appendTo区别相同
+
+
+注：
+	1，所有的添加，替换操作将原始的元素删除
+			如：$("div").append($("p"); //原始p标签将会被删除;
