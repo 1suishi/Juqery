@@ -10,13 +10,25 @@
 			
 
 			// 1,把所有的段落用一个新创建的div包裹起来
+			// $(function(){
+			// 	//$("p").wrapInner("<b></b>");
+
+			// 	$("p").wrapInner(document.createElement("b"));
+
+			// });
+
+
+			//2,参数为一个函数
+			// 函数有一个参数 index 索引
 			$(function(){
 				//$("p").wrapInner("<b></b>");
 
-				$("p").wrapInner(document.createElement("b"));
+				$('p').wrapInner(function(index) {
+				  return '<div class="' + $(this).text() + '" />';
+				});
 
 			});
-
+			
 			
 
 			
