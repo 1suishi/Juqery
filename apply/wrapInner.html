@@ -11,7 +11,10 @@
 
 			// 1,把所有的段落用一个新创建的div包裹起来
 			$(function(){
-				$("p").wrapInner("<b></b>");
+				//$("p").wrapInner("<b></b>");
+
+				$("p").wrapInner(document.createElement("b"));
+
 			});
 
 			
