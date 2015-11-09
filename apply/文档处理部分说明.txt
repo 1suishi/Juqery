@@ -1,0 +1,26 @@
+总体说明：
+	元素的操作无外乎 增，删，改，查
+
+	增:
+		父元素   wrap ,wrapAll
+		兄弟元素  after，before，insertBefore, insertAfter
+		子元素   append, appendTo, prepend, prependTo, wrapInner(子元素添加父元素)
+
+	删：
+		父元素 unwrap
+		兄弟元素  remove，detach（都是自身）
+				二者区别 remove 元素的事件被删除
+						 detach 元素的事件保留
+		子元素  empty
+	改：replaceWith(修改自身)，replaceAll（修改自身）
+
+	查： 选择器的工作！！
+
+	增加一个功能： 复制 clone
+
+
+append,appendTo,prepend,prependTo 是插入到选中元素的内部
+after,before  插入到选中元素外部
+insertAfter,insertBefore 也是插入到选中元素外部
+				他们和after，before是相反的操作
+				区别和append与appendTo区别相同
