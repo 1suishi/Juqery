@@ -1,0 +1,38 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			//克隆匹配的DOM元素并且选中这些克隆的副本。
+			//在想把DOM文档中元素的副本添加到其他位置时这个函数非常有用。
+
+			
+
+			$(function(){
+				$("b").clone().appendTo($("p"));
+			});
+
+			//创建一个按钮，他可以复制自己，并且他的副本也有同样功能。
+
+
+			$(function(){
+				$("button").click(function(){
+				  $(this).clone(false).insertAfter(this);
+				});
+			});
+
+			
+
+	</script>
+
+
+	</head>
+
+	<body>
+		<b>Hello</b><p>, how are you?</p>
+		<button>Clone Me!</button>
+	</body>
+
+</html>
