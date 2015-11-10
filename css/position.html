@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+			//position()函数用于返回当前匹配元素
+				//相对于其被定位的祖辈元素的偏移，
+				//也就是相对于被定位的祖辈元素的坐标。
+				//该函数只对可见元素有效。
+
+
+				//从上述jQuery的运行结果可知，position()并不是获取相对于其父元素的偏移位置。
+				// 而是根据有定位的元素的偏移 relative，absolute,fixed
+
+
+            //参数
+            	// 无参数 获取
+            	//参数 {top: 0, left: 0} 设置
+            	// 参数 函数
+
+            //1
+            $(function(){
+            	var of = $("p").position();
+            	console.log(of);
+
+            });
+
+            //2
+
+            $(function(){
+            	
+            	//$("p").position({top: 0, left: 0});
+            	
+
+            });
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div ><p>I would like to say: </p></div>
+		
+		
+
+	</body>
+
+</html>
