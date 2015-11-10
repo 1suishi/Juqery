@@ -1,0 +1,49 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+			//取得匹配元素当前计算的高度值（px）
+
+			// 和css 区别
+
+			//$(element).height(); // 返回数字，例如：100
+			//$(element).css("height"); // 返回字符串，例如："100px"
+
+			//参数
+			//	1,无
+			//	2,高度
+			//  3，函数
+			
+			$(function(){
+
+				alert($("div").eq(0).height()); //0
+				alert($("div").eq(1).height()); //100
+
+				$("p").height(function(index,v){
+					return v*1.2;
+				})
+			})
+
+
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div id="n1" style="padding: 10px;"></div>
+		<div id="n2" style="height: 100px;"></div>
+		<p style="background-color:#000">1234</p>
+		
+		
+
+	</body>
+
+</html>
