@@ -1,0 +1,81 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+			
+			//访问匹配元素的样式属性。
+
+			
+
+			//用法一：
+
+			//jQueryObject.css( propertyName [, value ] )
+			//设置或返回指定css属性propertyName的值。
+
+				//如果指定了value参数，则表示设置css属性propertyName的值为value；
+						//value
+							//1,json
+							//2,两个字符串
+				//如果没有指定value参数，则表示返回css属性propertyName的值。
+
+			$(function(){
+
+				//$("p").css({"color":"red"});
+				//$("p").css({ "color": "#ff0011", "background": "blue" });
+
+			});
+
+			//参数 两个字符串
+
+			$(function(){
+				//$("p").css("color","red");
+
+				//获取css属性 必须有参数
+ 				//var sty = $("p").css("color");
+				//console.log(sty);
+			});
+
+			// 参数 是 函数
+
+			$(function(){
+				$("p").click(function() {
+				    $(this).css({ 
+				      height: function(index, value) {
+				        return parseFloat(value) * 1.2;
+				      }
+				    });
+				  });
+			});
+
+
+			//如果参数value为空字符串("")，则表示删除该css属性。
+
+			$(function(){
+				$("p").css("color","red");
+
+				
+ 				 $("p").css("color","");
+				
+			});
+			
+		
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>I would like to say: </p>
+		
+		
+
+	</body>
+
+</html>
