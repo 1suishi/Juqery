@@ -1,0 +1,66 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+			//用于设置或返回当前匹配元素相对于垂直滚动条顶部的偏移。
+			$(function(){
+				var $content = $("#content");
+				var $btn = $("#btn");
+				var $msg = $("#msg");
+
+				$btn.click( function(){
+					
+				    $msg.html ( "content的scrollTop：" + $content.scrollTop() );  
+				});
+
+				//设置显示区域之前隐藏119px高度的content的内容
+				$content.scrollTop( 119 );
+			})
+            
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div id="content" style="width:200px; height: 200px; overflow:auto;">
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+			CodePlayer<br>
+			专注于编程开发技术分享<br>
+		</div>
+		<input id="btn" type="button" value="点击" >
+		<div id="msg"></div>
+		
+		
+
+	</body>
+
+</html>
