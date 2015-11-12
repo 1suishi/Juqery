@@ -1,0 +1,31 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+
+		$(function(){
+			var p = $("p:first");
+			$("p:last").text( "outerWidth:" + p.outerWidth() + " , outerWidth(true):" + p.outerWidth(true) );
+			
+			$("p:last").text( "outerHeight:" + p.outerHeight() + " , outerHeight(true):" + p.outerHeight(true) );
+		});
+			
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>Hello</p><p>2nd Paragraph</p>
+		
+		
+
+	</body>
+
+</html>
