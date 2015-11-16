@@ -40,10 +40,16 @@
 				// // 设置所有img元素的title属性值：
 				// // 1.如果该元素已经有了title属性，则不作改变
 				// // 2.如果该元素之前没有title属性，则设置title属性等于它的alt属性
-				 $("img").attr("title", function(index, attrValue){
-				//     // 这里的this表示当前DOM元素
-				     return attrValue== undefined ? this.alt : attrValue;    
-				 });
+				//  $("img").attr("title", function(index, attrValue){
+				// //     // 这里的this表示当前DOM元素
+				//      return attrValue== undefined ? this.alt : attrValue;    
+				//  });
+
+			 var p = $("p").prop("className");
+			var s = $("p").attr("className");
+
+			console.log(s);
+			console.log(p);
 
 			});
 	</script>
@@ -54,7 +60,7 @@
 	<body>
 
 		<div id="n1">
-		    <p id="n2" data-id="25">CodePlayer</p>
+		    <p id="n2" class= "test" data-id="25">CodePlayer</p>
 		    <input id="n3" name="name" type="text" label="姓名" >
 		    <img id="n4" alt="CodePlayer" src="/image/blank.gif" >
 		    <img id="n5" alt="站点logo" title="专注于编程开发技术分享" src="http://localhost/static/image/site-url.png" >
