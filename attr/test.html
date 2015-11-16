@@ -8,14 +8,9 @@
 	<script type="text/javascript">
 
 		$(function(){
+				var array = [1,2,3];
 
-			$("<div>", {
-			  "class": "test",
-			  "html": "<p>Click me!</p>",
-			  click: function(){
-			    $(this).toggleClass("test");
-			  }
-			}).appendTo("body");
+				console.log("each" in array);
 
 		});
 			
