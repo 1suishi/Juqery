@@ -1,0 +1,55 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+
+
+			$(function(){
+
+				//1,无参数  获取
+				// 又有匹配元素返回值 合在一起
+
+				
+				var h = $("p").text();  //asdfasdf
+
+				console.log(h);
+
+				//   字符串
+				
+
+				$("p").text("Hello world!");
+
+				// // 函数
+
+
+				$("p").text(function(n){
+			    	return "这个 p 元素的 index 是：" + n;
+			    });
+
+			
+
+			});
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div>
+			<div>
+				<p>asdf</p>
+				<p>asdf</p>
+			</div>
+		</div>
+		
+		
+
+	</body>
+
+</html>
