@@ -7,8 +7,12 @@
 	<script type="text/javascript">
 
 	
-			// 	jQuery 对象中元素的个数。
-			// 当前匹配的元素个数。与 length 将返回相同的值。
+			// 	取得其中一个匹配的元素。 
+
+			// get(num)表示取得第几个匹配的元素。从0开始，返回的是DOM对象
+			// eq(index),不过eq(index)返回的是    jQuery对象。
+
+			// $(this).get(0)与$(this)[0]等价。
 
 
 
@@ -18,8 +22,11 @@
 
 			$(function(){
 					
-				alert($("p").size()); //2
-				alert($("p").length); //2
+				var get = $("p").get(0);
+				var eq = $("p").eq(0);
+
+				console.log(get);
+				console.log(eq);
 			});
 			
 			
