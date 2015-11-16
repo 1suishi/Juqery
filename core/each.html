@@ -1,0 +1,68 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+			// 以每一个匹配的元素作为上下文来执行一个函数。
+			// 每次执行传递进来的函数时，函数中的this关键字都指向一个不同的DOM元素（每次都是一个不同的匹配元素）。
+
+			
+			 // 返回 'false' 将停止循环 (就像在普通的循环中使用 'break')。
+			 // 返回 'true' 跳至下一个循环(就像在普通的循环中使用'continue')。
+			$(function(){
+
+
+					$("<img></img>").appendTo($("body"));
+					$("<img/>").appendTo($("body"));
+				
+					$("img").each(function(i){
+					   this.src = "test" + i + ".jpg";
+					 });
+
+
+					//  注：此时domEle === this  为 true
+					// 也就是 $(domEle) === $(this)  为 false
+
+					$("button").click(function () { 
+						$("div").each(function (index, domEle) { 
+							
+							$(domEle).css("backgroundColor", "yellow");  
+							if ($(domEle).is("#stop")) { 
+							$("span").text("Stopped at div index #" + index); 
+							return false; 
+							} 
+						});
+					});
+		
+			
+
+			});
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<button>Change colors</button>
+		<span ></span> 
+		<div></div> 
+		<div></div>
+
+		<div></div> 
+		<div></div>
+		<div id="stop">Stop here</div> 
+		<div></div>
+
+		<div></div>
+		<div></div>
+		
+		
+
+	</body>
+
+</html>
