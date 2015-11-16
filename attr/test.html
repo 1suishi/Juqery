@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+
+			$("<div>", {
+			  "class": "test",
+			  "html": "<p>Click me!</p>",
+			  click: function(){
+			    $(this).toggleClass("test");
+			  }
+			}).appendTo("body");
+
+		});
+			
+			
+
+
+			
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div>
+			<div>
+				<p>asdf</p>
+				<p>asdf</p>
+			</div>
+		</div>
+		
+		
+
+	</body>
+
+</html>
