@@ -1,0 +1,83 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+			// 如果存在（不存在）就删除（添加）一个类
+
+
+			
+				$("p").addClass("selected");
+
+			$(function(){
+
+				 $("p").addClass("selected selected1");
+
+				// 1,为匹配的元素切换 指定的'selected' 类
+				$("button.one").click(function(){
+					$("p").toggleClass("selected");
+				});
+
+
+				//2，一本 Boolean 值，
+				// 用于指定是添加还是移除css类名。
+				// true表示 切换功能  (前提是之前存在class)
+				// false表示移除。
+
+				$("button.two").click(function(){
+					$("p").toggleClass(true);
+				});
+
+				//3,function
+				//toggleClass()还会为函数传入3个参数：
+					// 第一个参数就是该元素在匹配元素中的索引，
+					// 第二个参数就是该元素节点当前的class属性值，
+					// 第三个参数就是调用toggleClass()时传入的switch参数。
+
+				// 函数的返回值就是该元素需要切换的css类名(也可以通过空格分隔表示多个css类名)
+				// 如果返回值为空白字符串或者undefined，toggleClass()将不会为当前元素切换任何css类名。
+
+				$("button.three").click(function(){
+
+					$("p").toggleClass(function(index,ori){
+						return "fuc_class";
+					});
+				});
+
+				// 4, class Boolean
+				// // true表示 添加   addClass
+				// false表示移除。   removeClass
+
+				$("button.four").click(function(){
+
+					$("p").toggleClass("selected",true);
+				})
+			});
+
+			
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p> asdf</p>
+
+		<button class = "one">one</button>
+		<button class = "two">two</button>
+		<button class = "three">three</button>
+		<button class = "four">four</button>
+
+
+		
+		
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+
+
+			$(function(){
+
+				$('ul li:last').addClass(function() {
+
+				  return 'item-' + $(this).index();
+				});
+
+
+				// 同名的class 会只添加一次
+
+				$("p").addClass("selected");
+				$("p").addClass("selected selected2");
+
+			
+
+			});
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p> asdf</p>
+
+		<ul>
+			<li>Hello</li>
+			<li>Hello</li>
+			<li>Hello</li>
+		</ul>
+		
+		
+
+	</body>
+
+</html>
