@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+				
+
+				var p = $("p").map(function(){
+					return this.tagName;
+				});
+
+				console.log(p.get().join(";"));
+
+		});
+			
+			
+
+
+			
+
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div>
+			<div>
+				<p>asdf</p>
+				<p>asdf</p>
+			</div>
+		</div>
+		
+		
+
+	</body>
+
+</html>
