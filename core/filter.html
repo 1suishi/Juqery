@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+
+		$(function(){
+
+
+			var f = $("p").filter(".selected");
+			var h = $("p").has(".selected");
+
+			console.log(f);
+			console.log(h);
+
+			var  f = $("p").first();
+			console.log(f);
+		})
+			
+			
+			
+	</script>
+
+
+	</head>
+
+	<body>
+		<p>Hello</p>
+		<p class="selected">Hello Again</p>
+		<p class="selected">And Again <span class= "selected">df </span></p>
+
+		<div> <span calss= "selected">df </span></div>
+		
+	</body>
+
+</html>
