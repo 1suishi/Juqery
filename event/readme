@@ -1,0 +1,37 @@
+事件
+
+1，页面载入
+  1，ready 当DOM载入就绪可以查询及操纵时绑定一个要执行的函数。
+
+2，事件处理
+  1，on  在选择的元素上绑定事件
+  2,bind
+  3,one
+  4, trigger 触发事件
+  5，triggerHandler 只触发指定的事件类型。
+                    但不会执行浏览器默认动作，也不会产生事件冒泡
+  6,unbind
+  7,off
+
+3,事件委托
+  1，delegate
+  2，undelegate
+
+4，事件切换
+  1，hover
+  2，toggle
+
+5，事件
+  1，blur
+  2,change
+  3,click
+  4,dbclick
+  5,error
+  
+  6,focus
+  7,focusin 
+  8,focusout
+
+  9,按键  keydown keypress keyup
+  10，鼠标 mousedown mouseenter mouseleave mousemove mouseout mouseover mouseup 
+  resize scroll  select 

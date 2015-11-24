@@ -1,0 +1,45 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+
+			function one(){
+				console.log("one");
+			}
+			function two(){
+				alert("two");
+			}
+			
+			 $(function(){
+			 	$("input").focusin("click",one);
+			 	// $("p").on("click",two);
+
+			 	// $("p").off("click",one)
+			 })
+			
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<div>
+			
+				123
+				<input type="text">
+				456
+			
+		</div>
+
+		
+		
+
+	</body>
+
+</html>

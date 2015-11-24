@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+
+			function one(){
+				alert("one");
+			}
+			function two(){
+				alert("two");
+			}
+			
+			 $(function(){
+			 	$("p").on("click",one);
+			 	$("p").on("click",two);
+
+			 	$("p").off("click",one)
+			 })
+			
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p> this is a test p </p>
+
+		
+		
+
+	</body>
+
+</html>
