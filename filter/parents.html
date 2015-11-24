@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+
+
+		$(function(){
+
+
+			var s  = $("span");
+			console.log(s);
+
+			var p = $("span").parent();
+			console.log(p);
+
+
+			var e = $("span").parents()
+			console.log(e);
+
+			
+
+			
+		})
+			
+			
+			
+	</script>
+
+
+	</head>
+
+	<body>
+		<div>
+			<p>
+				<span>Hello</span>
+			</p>
+			<span>Hello Again</span>
+			<span>Hello Again</span>
+
+			<div>
+				<p>
+					<span>Hello</span>
+				</p>
+				<span>Hello Again</span>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
