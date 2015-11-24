@@ -19,7 +19,7 @@
 
 4，事件切换
   1，hover
-  2，toggle
+  2，toggle  切换显示状态
 
 5，事件
   1，blur
@@ -27,7 +27,7 @@
   3,click
   4,dbclick
   5,error
-  
+
   6,focus
   7,focusin 
   8,focusout
