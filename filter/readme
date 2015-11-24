@@ -38,7 +38,7 @@
 		6，prevUntil 加个判断
 		7，siblings  所有同辈元素
 	3，父元素
-		1,parent 每个元素的父元素（若两个父元素相同，只取一个）；
+		1，parent 每个元素的父元素（若两个父元素相同，只取一个）；
 		2，parents 每个元素的父元素级祖先元素（相同不去一个）
 		3，parentsUntil  给parents加个限定
 		4，offsetParent  有定位的parent 
