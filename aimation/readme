@@ -1,0 +1,17 @@
+1,显示，隐藏
+	1，show
+	2，hide
+	3，toggle
+2,滑动
+	1，slideDown
+	2，slideUp
+	3，slideToggle
+3,淡入淡出
+	1，fadeIn
+	2, fadeOut
+	3, fadeToggle
+	4，fadeTo
+4,动画
+
+5,jQuery.fx.off 关闭页面上所有的动画。
+  jQuery.fx.interval设置动画的显示帧速。

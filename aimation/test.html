@@ -1,0 +1,57 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+	<script type="text/javascript">
+			
+			
+			 $(function(){
+			 	$("#btnFadeSwitch").click( function(){
+					var v = $("#animation").val();
+					if( v == "1" ){
+						$("p").fadeToggle( );		
+					}else if(v == "2"){
+						$("p").fadeToggle( "slow" );	
+					}else if(v == "3"){
+						$("p").fadeToggle( 3000 );	
+					}else if(v == "4"){
+						$("p").fadeToggle( 1000, function(){
+							alert("切换完毕!");
+						} );
+					}else if(v == "5"){
+						$("p").fadeToggle( 1000, "linear" );	
+					}else if(v == "6"){
+						$("p").fadeToggle( { duration: 1000 } );	
+					}
+				} );
+			 })
+			
+	</script>
+
+
+	</head>
+
+	<body>
+
+		<p>CodePlayer</p>
+		<p>专注于编程开发技术分享</p>
+		淡入淡出的切换效果：
+		<select id="animation">
+			<option value="1">fadeToggle( )</option>
+			<option value="2">fadeToggle( "slow" )</option>
+			<option value="3">fadeToggle( 3000 )</option>
+			<option value="4">fadeToggle( 1000, complete )</option>
+			<option value="5">fadeToggle( 1000, "linear" )</option>
+			<option value="6">fadeToggle( options )</option>
+		</select>
+		<input id="btnFadeSwitch" type="button" value="切换显示/隐藏" />
+		
+		
+
+	</body>
+
+</html>
+
+
