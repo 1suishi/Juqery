@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic</title>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// 合并对象(多个参数)
+		
+		var result=$.extend({},{name:"Tom",age:21},{name:"Jerry",sex:"Boy"});
+		console.log(result);
+
+		// 扩展方法 (只有一个参数)
+		$.fn.extend({
+		  hello:function(){alert('hello');}
+		 });
+
+		// 深拷贝，浅拷贝
+		
+
+
+	</script>
+
+</body>
+</html>
